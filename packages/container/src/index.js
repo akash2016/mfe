@@ -1,3 +1,3 @@
 import ('./bootstrap');
 
-console.log('check');
+console.log('there');
