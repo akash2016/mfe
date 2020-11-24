@@ -1,2 +1,2 @@
 import ('./bootstrap');
-console.log('in container');
+console.log('inside container');
