@@ -1,2 +1,2 @@
 import ('./bootstrap');
-console.log('inside shell container');
+console.log('inside app shell container');
