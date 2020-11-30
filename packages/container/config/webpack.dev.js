@@ -9,10 +9,14 @@ const devConfig = {
         port: 8080,
         historyApiFallback: true
     },
+    output:{
+        publicPath: 'http://localhost:8080/'
+       },
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
             remotes:{
+              auth: 'auth@http://localhost:8082/remoteEntry.js', 
               marketing: 'marketing@http://localhost:8081/remoteEntry.js'
             },
             shared: packageJson.dependencies,
